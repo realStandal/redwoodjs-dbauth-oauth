@@ -1,0 +1,104 @@
+
+/*
+ * Normalize
+ */
+html, body, #redwood-app {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: var(--bs-gray-100);
+}
+
+/*
+ * Bootstrap Customizations & Extensions
+ */
+
+.btn > *:first-child {
+  margin-right: 0.65rem;
+}
+
+.btn-github {
+  background-color: #333;
+  color: #fff;
+}
+.btn-github:hover {
+  background-color: #222;
+  color: #fff;
+}
+.btn-github:active {
+  background-color: #111;
+  color: #fff;
+}
+.btn-github:focus {
+  box-shadow: 0 0 0 .25rem rgba(0,0,0,.35);
+}
+
+.btn-discord {
+  background-color: #5865F2;
+  color: #fff;
+}
+.btn-discord:hover {
+  background-color: #4150f1;
+  color: #fff;
+}
+.btn-discord:active {
+  background-color: #2a3aef;
+  color: #fff;
+}
+.btn-discord:focus {
+  box-shadow: 0 0 0 .25rem rgba(88, 101, 242, .45);
+}
+
+.btn-twitch {
+  background-color: #6441a5;
+  color: #fff;
+}
+.btn-twitch:hover {
+  background-color: #593a92;
+  color: #fff;
+}
+.btn-twitch:active {
+  background-color: #4e3380;
+  color: #fff;
+}
+.btn-twitch:focus {
+  box-shadow: 0 0 0 .25rem rgba(100, 65, 165, .45);
+}
+
+.auth-layout {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 476px;
+}
+.auth-card-body {
+  padding: 1.5rem;
+}
+.auth-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.auth-header > h2 {
+  font-weight: bold;
+}
+.auth-header > p {
+  color: var(--bs-gray-600);
+  font-size: 0.85rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.auth-header > *:not(:first-child) {
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+.auth-header > *:last-child {
+  margin-bottom: 0;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.auth-form > *:not(:first-child) {
+  margin-top: 1rem;
+}

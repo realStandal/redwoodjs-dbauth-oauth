@@ -1,0 +1,19 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = "debian-openssl-1.1.x"
+}
+
+model User {
+  id                  String  @id @default(uuid())
+  email               String  @unique
+  name                String?
+  hashedPassword      String  @default("")
+  salt                String  @default("")
+  resetToken          String  @default("")
+  resetTokenExpiresAt String  @default("")
+}

@@ -1,0 +1,17 @@
+[web]
+  title = "RedwoodJS - DBAuth OAuth Example"
+  port = 8910
+  apiUrl = "/.redwood/functions" # https://redwoodjs.com/docs/app-configuration-redwood-toml#api-paths
+  includeEnvironmentVariables = [
+    "OAUTH_REDIRECT_URL",
+    "DISCORD_OAUTH_CLIENT_ID",
+    "DISCORD_OAUTH_SCOPE",
+    "GITHUB_OAUTH_CLIENT_ID",
+    "GITHUB_OAUTH_SCOPE",
+    "TWITCH_OAUTH_CLIENT_ID",
+    "TWITCH_OAUTH_SCOPE",
+  ]
+[api]
+  port = 8911
+[browser]
+  open = true
